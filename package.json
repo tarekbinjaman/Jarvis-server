@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@ai-sdk/groq": "^3.0.24",
+    "ai": "^6.0.100",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "natural": "^8.1.0"
