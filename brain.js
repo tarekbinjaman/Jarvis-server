@@ -2,8 +2,10 @@ const natural = require("natural");
 
 const fs = require("fs");
 const { json } = require("stream/consumers");
+const path = require("path");
 
-const knowledge = JSON.parse(fs.readFileSync("knowledge.json"));
+const filePath = path.join(__dirname, 'knowledge.json');
+const knowledge = fs.readFileSync(filePath, 'utf8');
 
 function saveKnowledge() {
     fs.writeFileSync("knowledge.json", JSON.stringify(knowledge, null, 2))
