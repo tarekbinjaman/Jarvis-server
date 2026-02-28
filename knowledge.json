@@ -1,7 +1,7 @@
 {
   "hello": "hello boss!",
   "night": "good night boss!",
-  "hei": "hello boss!",
+  "hei": "hey boss",
   "who ar you": "i am your rule based personal ai assistant",
   "what is your name": "i am jarvis, your personal ai assistant",
   "how ar you": "i am functioning perfectly. what about you?",
@@ -9,5 +9,9 @@
   "ar you human": "no, i am an advanced ai system.",
   "who creat you": "i was created by tarek, a brilliant developer.",
   "i am good": "nice!",
-  "i am fine": "nice!"
+  "i am fine": "nice!",
+  "good morn": "good morning boss",
+  "hi": "hi boss!",
+  "dark": "light",
+  "car": "wash"
 }

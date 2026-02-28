@@ -59,6 +59,16 @@ function getResponse(message) {
         knowledge[preprocessTrigger] = reply; // setting up new property
         saveKnowledge();
         return "Got it! I learn something new."
+        } else if(message.startsWith("if i say")) {
+            const parts = 
+            message
+            .split("reply");
+            const trigger = parts[0].replace("if i say", "").trim();
+            const preprocessTrigger = preprocess(trigger);
+            const reply = parts[1].trim();
+            knowledge[preprocessTrigger] = reply;
+            saveKnowledge()
+            return "Got it! I learn something new."
         }
     } catch(err) {
         return "Teach format incorrect. use teach: when i say x you reply y"
