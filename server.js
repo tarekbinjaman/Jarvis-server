@@ -5,7 +5,7 @@ const {getResponse} = require("./brain")
 const app = express();
 app.use(cors(
     {
-    origin: "https://tarek-jarvis-client-b5ulq2v6p-tarek-jamans-projects.vercel.app",
+    origin: "https://tarek-jarvis-client.vercel.app",
     credentials: true
   }
 ));
