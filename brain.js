@@ -5,10 +5,10 @@ const { json } = require("stream/consumers");
 const path = require("path");
 
 const filePath = path.join(__dirname, 'knowledge.json');
-const knowledge = fs.readFileSync(filePath, 'utf8');
+let knowledge = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
 function saveKnowledge() {
-    fs.writeFileSync("knowledge.json", JSON.stringify(knowledge, null, 2))
+    fs.writeFileSync(filePath, JSON.stringify(knowledge, null, 2))
 };
 
 let memory = {
@@ -46,7 +46,7 @@ function getResponse(message) {
     message = message.toLowerCase();
 
     // Teach mode
-    try {
+
         if(message.startsWith("teach:")){
             const parts = message
             .replace("teach:", "")
@@ -72,9 +72,7 @@ function getResponse(message) {
             saveKnowledge()
             return "Got it! I learn something new."
         }
-    } catch(err) {
-        return "Teach format incorrect. use teach: when i say x you reply y"
-    }
+
 
 for (let key in knowledge) {
     const processedKey = preprocess(key);
