@@ -19,6 +19,10 @@ app.post("/chat", (req, res) => {
     res.json({reply: jarvisReply})
 })
 
+app.get("/ping", (req, res) => {
+  res.send('server is alive')
+})
+
 app.get("/", (req, res) => {
   res.send("Jarvis server is running 🚀");
 });

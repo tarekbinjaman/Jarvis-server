@@ -89,3 +89,8 @@ We’ll use a lightweight library:
 ~~~
 npm install natural
 ~~~
+
+server status
+~~~
+https://stats.uptimerobot.com/QFtyyEqmTz
+~~~
